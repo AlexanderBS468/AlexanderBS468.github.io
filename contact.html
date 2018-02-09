@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Напишите нам</title>
+        <style>
+       #map {
+        height: 300px;
+        width: 100%;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="header">
+    <img id="logo" src="img/logo_new.png" alt="logo">
+    <!-- Создание меню-->
+    <ul class="menu">
+       <li><a href="index.html">Главная</a></li>
+       <li><a href="catalog.html">Каталог</a></li> 
+       <li class="new"><a href="#">Новинки</a>
+            <ul><li>в разработке</li></ul></li>
+        <li><a href="#">Контакты</a></li>
+    </ul></div>
+    <h1>Напишите нам</h1>
+    <form class="form_c" action="#">
+        <input type="text" placeholder="Ваше Имя" id="name"><label for="name">Ваше Имя</label>
+        <input type="text" placeholder="email" id="email"><label for="email">email</label>
+        <input type="text"  placeholder="Тема" id="tema"><label for="tema">Тема</label>
+        <textarea id="mes" cols="70" rows="5"></textarea><br>
+        <input type="submit" value="Отправить данные">
+        <input type="reset" value="Отмена"> </form>
+    <br>
+      <ul> <h1>Адрес</h1>
+         <li>Контактный номер телефона интернет-магазина : 8-(800)-88******</li>
+         <li>Адрес : Россия г.Иркутск</li>
+         <li>Email : email@email.ru</li>
+         <li><a href="index.html">Сайт магазина</a></li>
+      </ul>
+        <h3>Google Maps</h3>
+    <div id="map">
+     <script>
+      function initMap() {
+        var uluru = {lat: 52.29, lng: 104.28};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDix8wSqdBMmwLOW-8r7RdUTwXPYy1J9I&callback=initMap">
+    </script></div>
+    <br>
+    <hr/>
+    <div class="footer">
+        <span>&laquo;Все права защищены&raquo; &copy; &nbsp;2018 <a href="https://geekbrains.ru" target="_blank">GeekBrains</a> 
+        <a href="index.html">Hi-Tech.Shop</a> </span>
+    </div></div>
+    </body>
+
+</html>
