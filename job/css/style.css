@@ -1,0 +1,395 @@
+@font-face {
+	font-family: 'Proxima Nova Th';
+	src: url('ProximaNova-Extrabld.eot');
+	src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
+        url('../fonts/opensans/opensanssemibold.woff2') format('woff2'),
+        url('../fonts/opensans/opensanssemibold.woff') format('woff'), 
+        url('../fonts/opensans/opensanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), 
+        url('../fonts/opensans/opensansbold.woff2') format('woff2'), 
+        url('../fonts/opensans/opensansbold.woff') format('woff'), 
+        url('../fonts/opensans/opensansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    background-color:  #008fd5;
+    height: 62px;
+    width: 100%;
+    display: flex;
+}
+
+header .container, footer .container, .content .container {
+    margin: auto;
+    width: 100%;
+    max-width: 981px;
+    display: inline-flex;
+}
+
+header .left_block {
+    flex: 1 0 auto;
+    margin-top: -10px;
+}
+header .left_block .logo {
+    font-family: Proxima Nova Th;
+    color:  #ffffff;
+    font-size: 30px;
+    line-height: normal;
+    text-align: left;
+    text-decoration: none;
+}
+
+header .right_block {
+    display: flex;
+    border-radius: 30px;
+    background-color:  #1471b3;
+    width: 177px;
+    height: 27px;
+}
+
+header .right_block div {
+    margin: auto 0;
+}
+
+header .right_block a {
+    text-decoration: none;
+    transform: 5s;
+}
+
+header .right_block>div:nth-child(1) {
+    width: 47px;
+    margin-left: 19px;
+}
+
+header .right_block div:nth-child(3) {
+    margin-right: 16px;
+    width: 47px;
+}
+
+header .right_block div:nth-child(2) {
+    display: flex;
+    text-align: center;
+    margin: -4px auto;
+    border-radius: 50%;
+    background-color:  #1065a1;
+    width: 35px;
+    height: 35px;
+}
+
+header .right_block a:hover {
+    font-weight: 800;
+}
+
+header .right_block div {
+    margin: auto;
+}
+
+.white {
+    color:  #ffffff;
+}
+
+.blue {
+    color:  #7ec0e0;
+}
+.text_reg {
+    font-family: Proxima Nova Rg;
+    font-size: 15px;
+    font-weight: 400;
+/*    line-height: 18px;*/
+}
+
+.content {
+    display: flex;
+}
+
+.content .container {
+    display: inline;
+    text-align: center;
+}    
+
+.content .container .slignu_up {
+    margin-top: 41px    
+}
+
+h2 {
+    margin: auto;
+    font-family: Proxima Nova Th;
+    color:  #3c4248;
+    font-size: 36px;
+    line-height: normal;
+}
+
+.content .container .desc {
+    margin: auto;
+    font-family: Proxima Nova Th;
+    color:  #008fd5;
+    font-size: 21px;
+    margin-top: 3px;
+    margin-bottom: 29px;
+    line-height: normal;
+}
+
+form {
+    display: inline-flex;
+}
+
+.slignu_up img {
+    margin-bottom: 13px;
+}
+.slignu_up input[type="email"] {
+    font-family: Proxima Nova Th;
+    color:  #848585;
+    font-size: 14px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #d7dfe5;
+    background-color:  #f0f5f8;
+    height: 45px;    
+    margin-right: 10px;
+    padding-left: 16px;
+    width: 378px;
+}
+
+.slignu_up input[type="email"]::placeholder {
+    font-family: Proxima Nova Th;
+    color:  #848585;
+    font-size: 14px;
+}
+
+.slignu_up .button {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #d7dfe5;
+    background-color:  #f5f6f7;
+    width: 133px;
+    height: 45px;
+    display: flex;
+}
+
+.slignu_up input[type="submit"] {
+    margin: auto;
+    background-image: url(../img/button.png);
+    width: 127px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    font-family: Proxima Nova Th;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-shadow: 0px 1px 0px rgba(100, 140, 59, 0.75);
+    transition: 1.5s;
+}
+.slignu_up input[type="submit"]:hover {
+    opacity: 0.9;
+    box-shadow: 0 1px 1.5px 1.5px rgba(0,0,0,0.4);
+}
+
+.services {
+    margin-top: 47px;
+}
+.services .bg {
+    position: absolute;
+    margin-top: 77px;
+    height: 100%;
+    background-color: #e6eff6;
+    z-index: -1;
+    left: 50%;
+    width: 99.4vw; 
+    margin-left: -50vw;    
+}
+
+.services .computer {
+    margin: auto;
+    width: 914px;
+    height: 479px;    
+    background-image: url(../img/computer.png);
+    margin-bottom: 26px;
+}
+
+.services .computer .screen {
+    position: relative;
+    top: 28px;
+    margin: auto;
+    width: 607px;
+    height: 376px;
+    background-image: url(../img/screen.png);
+}
+
+.services p{
+    margin: auto;
+    width: 846px;
+    font-family: OpenSans;
+    color: #6e7377;
+    font-size: 13px;
+    line-height: normal;
+    margin-top: 15px;
+}
+.services .buttons {
+    margin: auto;
+}
+.services .buttons, .about_us .buttons {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 37px;
+    background-color:  #1471b3;
+    width: 107px;
+    height: 27px;
+    border-radius: 20px;
+    transition: 1.5s;
+}
+
+.services .buttons:hover, .about_us .buttons:hover {
+    opacity: 0.9;
+    background-color:  #1471b3;
+    box-shadow: 0 0px 2.5px 2.5px rgba(0,0,0,0.4);
+}
+
+.services a {
+    margin: auto;
+    font-family: Proxima Nova Th;
+    color:  #ffffff;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;    
+}
+
+.services a:hover, .about_us .buttons a:hover {
+    color:  #dddddd;
+}
+
+.about_us .bg {
+    position: absolute;
+    height: 50%;
+    background-color: #fff;
+    z-index: -1;
+    left: 50%;
+    width: 99.4vw; 
+    margin-left: -50vw;      
+}
+
+.about_us .container {
+    display: inline-flex;
+    margin: 84px auto;
+    margin-bottom: 115px;
+}
+
+.about_us .container .left_block {
+    text-align: left;
+}
+
+.about_us .container .left_block .title {
+    font-family: Proxima Nova Th;
+    color: #3c4248;
+    font-size: 36px;
+    line-height: 18px;
+    margin-bottom: 32px
+}
+
+.about_us .buttons a {
+    margin: auto;
+    font-family: Proxima Nova Th;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;        
+}
+
+.about_us .container .left_block {
+    margin-right: 29px;
+}
+
+.about_us .container .left_block p {
+    font-family: OpenSans;
+    color: #878e93;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about_us .container .left_block .bold_text {
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.about_us .container .right_block .borde_img {
+    display: flex;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #edf0f2;
+    background-color:  #ffffff;
+    width: 473px;
+    height: 280px;
+}
+
+.about_us .container .right_block img {
+    margin: auto;
+    border: 8px solid #3c4348;
+}
+
+footer {
+    background-color:  #ececec;
+    height: 85px;
+    display: inline-flex;
+    width: 100%;
+}
+
+footer .left_block {
+    flex: 1 0 auto;
+    margin: auto;
+    font-family: OpenSans;
+    color:  #878e93;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+footer .right_block {
+    margin: auto;
+    font-family: OpenSans;
+    color:  #878e93;
+    font-size: 13px;
+    line-height: 24px;
+}

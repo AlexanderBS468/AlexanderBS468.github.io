@@ -1,0 +1,35 @@
+body { 
+    margin: 5px;
+    padding: 5px;
+    background: #fefefe;
+}
+nav {
+    outline: 1px solid #ccc;
+}
+nav ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+    border: 1px solid #ccc;
+    display: flex;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    
+}
+nav ul li:hover {
+    background-color: #ddd;    
+}
+nav ul li:first-child {
+    margin-right: -1px;
+}
